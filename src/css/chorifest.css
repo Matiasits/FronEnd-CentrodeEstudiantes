@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+
+@media screen and (min-width: 576px) {
+    /* Adjust the left margin of navbar-nav to push it to the right */
+    .navbar-nav {
+        margin-left: auto;
+    }
+    
+    .navbar-nav .nav-item {
+        display: flex; /* Display elements in a row */
+        align-items: center; /* Vertically center within each element */
+    }    
+}
+
+nav {
+    background-color: #3e3e3e; /* Dark blue background color */
+}
+
+nav h1 {
+    color:#f8f8f8;
+}
+
+nav a img { 
+    height: 50px;
+    width: 50px;
+}
+
+/* Styles for the header section */
+header {
+    grid-area: header; /* Position in the grid */
+}
+
+/* Styles for images within the header carousel */
+header .carousel-inner img {
+    width: 100%; /* Full width */
+    height: 500px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio while fitting into the container */
+}

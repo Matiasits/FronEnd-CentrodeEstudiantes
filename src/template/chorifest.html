@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de registro de eventos</title>
+  <link rel="shortcut icon" href="../img/index/icons/logo grande.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="../css/chorifest.css">
+  <link rel="stylesheet" href="../css/darkMode.css">
+  <link rel="stylesheet" href="../css/formulario.css">
+
+  <!--Importar las librerias-->
+      
+      <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+
+<body id="body" class="light">
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+          
+          <a class="navbar-brand" href="../../index.html">
+            <img src="../img/index/icons/logo grande.jpg" alt="Logo" class="d-inline-block align-top">
+          </a>
+          
+          <ul class="navbar-nav">
+              <!-- Barra de navegacion desplegable -->
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="./agenda.html">Agenda</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./chorifest.html">ChoriFest</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./equipo_socorro.html">Equipo de Socorro</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./quienes_somos.html">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                      <input type="checkbox" class="darkmode" id="btn_dark">
+                      </input>
+                  </li>
+                </ul>
+              </div>
+          </ul> 
+                  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+      </nav>
+      
+      
+      <header class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/chorifest/choripan.jpeg" class="d-block w-100" alt="Primer choripán">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/chorifest/choriSinTacc.jpeg" class="d-block w-100" alt="Segundo choripán">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/chorifest/choriVegano.jpeg" class="d-block w-100" alt="Tercer choripán">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </header>
+      
+      
+      <main class="container">
+        <section class="my-4">        
+          <form action="/registro" method="post">
+            
+            <div class="background">
+              <div class="container">
+                <div class="screen">
+                  <div class="screen-header">
+                    <div class="screen-header-left">
+                      <div class="screen-header-button maximize"></div>
+                      <div class="screen-header-button minimize"></div>
+                      <div class="screen-header-button cerrar"></div>
+                    </div>
+                    <div class="screen-header-right">
+                      <div class="screen-header-ellipsis"></div>
+                      <div class="screen-header-ellipsis"></div>
+                      <div class="screen-header-ellipsis"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="screen-body">
+                    <div class="screen-body-item left">
+                      <div class="app-title">
+                        <span>REGISTRATE</span>
+                      </div>
+                      <div class="app-form">
+                        <div class="app-form-group">
+                          <input class="app-form-control" placeholder="NOMBRE COMPLETO">
+                        </div>
+                        <div class="app-form-group">
+                          <input class="app-form-control" placeholder="EMAIL">
+                        </div>
+                        <div class="app-form-group">
+                          <input class="app-form-control" placeholder="TELEFONO">
+                        </div>
+                        
+                        <div id="rol-selector">
+                          <span>ROL</span>
+                        </div>
+                      <div class="form-group select">
+                        <select>
+                          <option class="option" value="1">Parrillero</option>
+                          <option class="option" value="2">Acomodador</option>
+                          <option class="option" value="3">Limpiador</option>
+                          <option class="option" value="3">Comprador</option>
+                        </select>
+                      </div>
+                        
+                      </div>
+                    </div>
+                    
+                    <div class="screen-body-item">
+                      
+                      
+                      <div id="rol-selector">
+                        <span>TIPO DE CHORI</span>
+                      </div>             
+                      <div class="app-form-group message">
+                        <input class="app-form-control" placeholder="TIPO DE PAN">
+                      </div>
+                      <div class="app-form-group message">
+                        <input class="app-form-control" placeholder="ADERESOS">
+                      </div>
+                      <div class="app-form-group message">
+                        <input class="app-form-control" placeholder="VERDURAS">
+                      </div>
+                      
+                      <div class="app-form-group buttons">
+                        <button class="app-form-button">ENVIAR</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </form>
+        
+        </section>
+    </main>
+    
+<script src="../js/global/darkMode.js"></script>
+<script src="https://kit.fontawesome.com/4d7393f56f.js" crossorigin="anonymous"></script>
+<script src="../js/chorifest/pedidoBackend.js"></script>
+<script src="../js/chorifest/chorifestContent.js"></script>
+<script src="../js/chorifest/chorifest.js"></script>
+
+</body>
+</html>
