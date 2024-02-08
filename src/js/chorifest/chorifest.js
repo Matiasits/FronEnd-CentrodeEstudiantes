@@ -1,6 +1,8 @@
 //TIPO DE CHORIS
 getTipoChori(showTipoChori);
 
+// Función para mostrar los tipos de choris en el contenido
+// Función para mostrar los tipos de choris en el contenido
 function showTipoChori(listaTipoChoris) {
     const tipoChoriContent = document.getElementById('tipoChori');
     tipoChoriContent.innerHTML = '';
@@ -17,11 +19,12 @@ function showTipoChori(listaTipoChoris) {
 
     const selectElement = document.createElement('select');
     selectElement.className = 'option';
+    selectElement.id = 'tipoChori-select'; // Agrega el ID aquí
 
-    listaTipoChoris.forEach((tipoChori, index) => {
+    listaTipoChoris.forEach((tipoChori) => {
         const optionElement = document.createElement('option');
-        optionElement.value = index + 1;
-        optionElement.textContent = tipoChori;
+        optionElement.value = tipoChori.idTipoChori;
+        optionElement.textContent = tipoChori.tipoDeChori;
         selectElement.appendChild(optionElement);
     });
 
@@ -30,20 +33,11 @@ function showTipoChori(listaTipoChoris) {
     tipoChoriContent.appendChild(mainContainer);
 }
 
-function getRolSelectorChoris(tipoChori) {
-    const optionElement = document.createElement('option');
-    optionElement.className = 'option';
-    optionElement.value = tipoChori.IdChori;
-    optionElement.innerText = tipoChori.TipoDeChori;
-    return optionElement;
-}
-
 //----------------------------------------------------------------
 
 getRol(showRoles);
 
 
-// Función para mostrar los roles en el contenido
 function showRoles(listaRoles) {
     const rolContent = document.getElementById('roles');
     rolContent.innerHTML = '';
@@ -60,11 +54,12 @@ function showRoles(listaRoles) {
 
     const selectElement = document.createElement('select');
     selectElement.className = 'option';
+    selectElement.id = 'roles-select'; // Agrega el ID aquí
 
-    listaRoles.forEach((rol, index) => {
+    listaRoles.forEach((rol) => {
         const optionElement = document.createElement('option');
-        optionElement.value = index + 1;
-        optionElement.textContent = rol;
+        optionElement.value = rol.idRol;
+        optionElement.textContent = rol.nombreRol;
         selectElement.appendChild(optionElement);
     });
 
@@ -73,12 +68,47 @@ function showRoles(listaRoles) {
     rolContent.appendChild(mainContainer);
 }
 
+const submitButton = document.getElementById('submitButton');
+const form = document.getElementById('registroForm');
 
-// Función para obtener el selector de roles
-function getRolSelector(rol) {
-    const optionElement = document.createElement('option');
-    optionElement.className = 'option';
-    optionElement.value = rol.IdRol;
-    optionElement.innerText = rol.NombreRol;
-    return optionElement;
-}
+let formData; 
+
+document.getElementById('registroForm').addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    formData = {
+        nombreCompleto: document.getElementById('nombreCompletoInput').value,
+        email: document.getElementById('emailInput').value,
+        telefono: document.getElementById('telefonoInput').value,
+        idRol: document.getElementById('roles-select').value,
+        idTipoChori: document.getElementById('tipoChori-select').value,
+        tipoPan: document.getElementById('tipoPanInput').value,
+        aderezo: document.getElementById('aderezosInput').value,
+        verdura: document.getElementById('verdurasInput').value,
+    };
+
+    try {
+        await postDB(formData);
+
+        // Muestra el tooltip de éxito
+        const tooltip = new bootstrap.Tooltip(submitButton, {
+            title: '¡FORMULARIO ENVIADO!',
+        });
+        tooltip.show();
+        
+        setTimeout(() => {
+            tooltip.dispose(); 
+        }, 5000);
+
+        setTimeout(() => {
+        }, 3000);
+    } catch (error) {
+        console.error('Error al registrar:', error);
+    }
+
+});
+
+
+
+
+

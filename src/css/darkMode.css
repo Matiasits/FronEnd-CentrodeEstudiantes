@@ -43,9 +43,16 @@ body {
     padding cubic-bezier(0,calc(var(--_i,-1)*200),1,calc(var(--_i,-1)*200)) .25s .1s;
 }
 
-.darkmode:checked + .screen:after {
+.darkmode:checked + .screen:after + #instrucciones + #flex-container{
   background-color: #85ff7a;
   box-shadow: 0 20px 40px rgba(85, 255, 122, 0.4);
+}
+
+#instrucciones{
+  box-shadow: 0 20px 40px rgba(206, 204, 204, 0.4);
+}
+#flex-container{
+  box-shadow: 0 20px 40px rgba(206, 204, 204, 0.4);
 }
 
 /* Cambia el color del sombreado */

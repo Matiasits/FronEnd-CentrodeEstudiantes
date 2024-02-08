@@ -5,6 +5,7 @@
   <title>Formulario de registro de eventos</title>
   <link rel="shortcut icon" href="../img/index/icons/logo grande.jpg" type="image/x-icon">
   <link rel="stylesheet" href="../css/chorifest.css">
+  <link rel="stylesheet" href="../../src/css/footer.css">
   <link rel="stylesheet" href="../css/darkMode.css">
   <link rel="stylesheet" href="../css/formulario.css">
 
@@ -87,12 +88,13 @@
             <span class="sr-only">Siguiente</span>
           </a>
         </div>
+        
       </header>
       
       
       <main class="container">
-        <section class="my-4">        
-          <form action="/registro" method="post">
+        <section class="my-4 ">        
+          <form id="registroForm" action="/registro" method="post">
             
             <div class="background">
               <div class="container">
@@ -117,38 +119,39 @@
                       </div>
                       <div class="app-form">
                         <div class="app-form-group">
-                          <input class="app-form-control" placeholder="NOMBRE COMPLETO">
+                          <input class="app-form-control" placeholder="NOMBRE COMPLETO" id="nombreCompletoInput">
                         </div>
                         <div class="app-form-group">
-                          <input class="app-form-control" placeholder="EMAIL">
+                          <input class="app-form-control" placeholder="EMAIL" id="emailInput">
                         </div>
                         <div class="app-form-group">
-                          <input class="app-form-control" placeholder="TELEFONO">
+                          <input class="app-form-control" placeholder="TELEFONO" id="telefonoInput">
                         </div>
                         
                         <div class="rol-selector" id="roles">
+                                                  
                         </div>
-                        
                       </div>
                     </div>
                     
                     <div class="screen-body-item">
                       
-                      
                       <div class="rol-selector" id="tipoChori">
-                      </div>             
+                        
+                      </div>
+                                 
                       <div class="app-form-group message">
-                        <input class="app-form-control" placeholder="TIPO DE PAN">
+                        <input class="app-form-control" placeholder="TIPO DE PAN" id="tipoPanInput">
                       </div>
                       <div class="app-form-group message">
-                        <input class="app-form-control" placeholder="ADERESOS">
+                        <input class="app-form-control" placeholder="ADERESOS" id="aderezosInput">
                       </div>
                       <div class="app-form-group message">
-                        <input class="app-form-control" placeholder="VERDURAS">
+                        <input class="app-form-control" placeholder="VERDURAS" id="verdurasInput">
                       </div>
-                      
+                                              
                       <div class="app-form-group buttons">
-                        <button class="app-form-button">ENVIAR</button>
+                        <button type="submit" class="app-form-button" id="submitButton">ENVIAR</button>
                       </div>
                       
                     </div>
@@ -162,11 +165,45 @@
         </section>
     </main>
     
+    
+	<footer class="footer-distributed">
+    
+		<div class="footer-right">
+    
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-linkedin"></i></a>
+			<a href="#"><i class="fa fa-github"></i></a>
+    
+		</div>
+    
+		<div class="footer-left">
+    
+			<p class="footer-links">
+				<a class="link-1" href="#">Home</a>
+    
+				<a href="#">Blog</a>
+    
+				<a href="#">Pricing</a>
+    
+				<a href="#">About</a>
+    
+				<a href="#">Faq</a>
+    
+				<a href="#">Contact</a>
+			</p>
+    
+			<p>Company Name &copy; 2015</p>
+		</div>
+      
+	</footer>  
+
+<script src="../js/chorifest/pedidoBackend.js"></script>
 <script src="../js/global/darkMode.js"></script>
 <script src="https://kit.fontawesome.com/4d7393f56f.js" crossorigin="anonymous"></script>
-<script src="../js/chorifest/pedidoBackend.js"></script>
-<script src="../js/chorifest/chorifestContent.js"></script>
 <script src="../js/chorifest/chorifest.js"></script>
+<script src="../js/chorifest/postDB.js"></script>
+<script src="../js/chorifest/chorifestContent.js"></script>
 
 </body>
 </html>
