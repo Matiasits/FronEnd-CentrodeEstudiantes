@@ -1,21 +1,4 @@
-
-#agenda .card{
-    flex-direction: row;
-    }
-    
-    #chorifest .card {
-        flex-direction: row;
-    }
-    
-    #equipoSocorro .card{
-      flex-direction: row-reverse;
-    }
-    
-    #quienesSomos .card {
-        flex-direction: row-reverse;
-    }
-    
-    footer{
+        footer{
         display: flex;
         align-items: center;
         background-color:#AAAAAA;

@@ -108,4 +108,18 @@ header .carousel-inner img {
     width:100%;
     transition:800ms ease all;
   }
-  
+  #agenda .card{
+    flex-direction: row;
+    }
+    
+    #chorifest .card {
+        flex-direction: row;
+    }
+    
+    #equipoSocorro .card{
+      flex-direction: row-reverse;
+    }
+    
+    #quienesSomos .card {
+        flex-direction: row-reverse;
+    }

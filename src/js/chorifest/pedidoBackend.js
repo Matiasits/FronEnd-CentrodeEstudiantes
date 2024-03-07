@@ -11,4 +11,3 @@ function getRol(show) {
         .then((json) => show(json))
         .catch((error) => console.log("Error al obtener los roles", error));
 }
-

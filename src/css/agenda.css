@@ -24,10 +24,8 @@ nav a img {
   width: 50px;
 }
 
-header {
-    grid-area: header;    
-}
-#instrucciones {
+
+.instrucciones {
     background-color: #f8f8f8;
     padding: 20px;
     border-radius: 5px;
@@ -37,13 +35,13 @@ header {
     max-width: 600px;
 }
 
-#instrucciones h3 {
+.instrucciones h3 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
 }
 
-#instrucciones p {
+.instrucciones p {
     font-size: 18px;
     line-height: 1.5;
     color: #666;
@@ -53,10 +51,6 @@ header {
 #botones{
     display: flex;
     justify-content: space-evenly;
-}
-
-main{
-    grid-area: main;
 }
 
 /* ============= Begin Testimonial Flexbox ============ */
@@ -85,8 +79,8 @@ main{
     -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
-    
   }
+  
   #left-zone {
     height: 50%;
     -webkit-box-flex: 0;
@@ -223,19 +217,20 @@ main{
   
   /* If the screen size is 480px or less */
   @media (max-width: 480px) {
-    .content_testimonial-1 .picto {
-      padding-top: 100px;
+      .content_testimonial-1 .picto {
+        padding-top: 100px;
+      }
+      .content_testimonial-2 .picto {
+        padding-top: 100px;
+      }
+      .content_testimonial-3 .picto {
+        padding-top: 100px;
+      }
+      .content_testimonial-4 .picto {
+        padding-top: 100px;
+      }
     }
-    .content_testimonial-2 .picto {
-      padding-top: 100px;
-    }
-    .content_testimonial-3 .picto {
-      padding-top: 100px;
-    }
-    .content_testimonial-4 .picto {
-      padding-top: 100px;
-    }
-    }
+    
     .content_testimonial-5 .picto {
       padding-top: 100px;
     }
