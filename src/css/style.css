@@ -123,3 +123,10 @@ header .carousel-inner img {
     #quienesSomos .card {
         flex-direction: row-reverse;
     }
+
+    .propuesta h3 {
+      padding-top: 1rem;
+      text-align: center;
+    }
+
+    
