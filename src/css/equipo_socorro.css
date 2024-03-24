@@ -107,6 +107,11 @@ main {
     flex-direction: column;
   }
   
+img {
+    max-width: 100%;
+    height: auto;
+    }
+  
   .app-title {
     display: flex;
     flex-direction: column;
