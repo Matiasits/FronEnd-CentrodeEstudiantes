@@ -1,188 +1,143 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
 
-@media screen and (min-width: 576px) {
-    /* Adjust the left margin of navbar-nav to push it to the right */
-    .navbar-nav {
-        margin-left: auto;
-    }
-    
-    .navbar-nav .nav-item {
-        display: flex; /* Display elements in a row */
-        align-items: center; /* Vertically center within each element */
-    }    
-  }
-  
-       body{
-        background-color:#fff;
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-       }
-        /* Styles for the navigation bar */
-        nav {
-            background-color: #3e3e3e; /* Dark blue background color */
-          }
-          
-          nav h1 {
-            color:#f8f8f8;
-          }
-          
-          nav a img { 
-            height: 50px;
-            width: 50px;
-          }
+header { 
+    grid-area: header;
+}
 
-       
+main {
+    grid-area: main;
+}
 
-       @media only screen and (max-width:768px) {
+section {
+    margin-bottom: 150px;
+}
+    
+.cardTestimonial{
+ border: none;
+ cursor: pointer;
+ box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+ }
+.cardTestimonial:hover{
+ background-color: #eee;
+}
+.ratings i{
+ color: orange;
+}
+.testimonial-list{
+ list-style: none;
+}
+.testimonial-list li{
+ margin-bottom: 20px;
+}
+.testimonials-margin{
+ margin-top: -19px;
+}
 
-        .container{
-        margin-top: 20px;
-       }
+.instrucciones {
+ background-color: #f8f8f8;
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ text-align: center;
+ margin: 20px auto ;
+ max-width: 600px;
+}
 
-         }
+.instrucciones h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
 
-        section {
-            margin-bottom: 150px;
-        }
-        
-       .cardTestimonial{
+.instrucciones p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
 
-        border: none;
-        cursor: pointer;
-        box-shadow: 0 0 40px rgba(51, 51, 51, .1)
-       }
 
-       .cardTestimonial:hover{
+.more-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto; /* Mueve los tres puntos a la derecha */
+}
 
-        background-color: #eee;
+.dot {
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 2px;
+}
 
-       }
+.save-icon {
+    margin-left: auto; /* Mueve Save Icon a la derecha */
+}
 
-       .ratings i{
+.instagramCard {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-        color: orange;
-       }
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
 
-       .testimonial-list{
+.profile-pic {
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
-        list-style: none;
-       }
+.username-location {
+    flex-grow: 1;
+}
 
-       .testimonial-list li{
+.more-icon {
+    width: 20px;
+    cursor: pointer;
+}
 
-        margin-bottom: 20px;
-       }
+.post-image {
+    width: 100%;
+    object-fit: cover;
+}
 
-       .testimonials-margin{
+.post-details {
+    padding: 10px;
+}
 
-        margin-top: -19px;
-       }
-       
-       .instrucciones {
-        background-color: #f8f8f8;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        margin: 20px auto ;
-        max-width: 600px;
-    }
-    
-    .instrucciones h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-        color: #333;
-    }
-    
-    .instrucciones p {
-        font-size: 18px;
-        line-height: 1.5;
-        color: #666;
-    }
-    
-    
-    .more-options {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: auto; /* Mueve los tres puntos a la derecha */
-    }
-    
-    .dot {
-        width: 4px;
-        height: 4px;
-        background-color: #000;
-        border-radius: 50%;
-        margin: 2px;
-    }
-    
-    .save-icon {
-        margin-left: auto; /* Mueve Save Icon a la derecha */
-    }
-    
-    .instagramCard {
-        width: 300px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 10px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    .user-info {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    .profile-pic {
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-    
-    .username-location {
-        flex-grow: 1;
-    }
-    
-    .more-icon {
-        width: 20px;
-        cursor: pointer;
-    }
-    
-    .post-image {
-        width: 100%;
-        object-fit: cover;
-    }
-    
-    .post-details {
-        padding: 10px;
-    }
-    
-    .likes-comments {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-    
-    .likes-comments img {
-        width: 24px;
-        margin-right: 15px;
-        cursor: pointer;
-    }
-    
-    .likes {
-        margin: 5px 0;
-        font-weight: bold;
-    }
-    
-    .caption {
-        margin: 0;
-        line-height: 1.2;
-    }
-    
-    .timestamp {
-        margin: 5px 0 0;
-        font-size: 0.8rem;
-        color: #888;
-    }
+.likes-comments {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.likes-comments img {
+    width: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.likes {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.caption {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.timestamp {
+    margin: 5px 0 0;
+    font-size: 0.8rem;
+    color: #888;
+}
     

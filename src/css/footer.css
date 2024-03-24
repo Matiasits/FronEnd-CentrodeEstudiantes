@@ -1,6 +1,7 @@
         footer{
         display: flex;
         align-items: center;
+        grid-area: footer;
         background-color:#AAAAAA;
     }
     

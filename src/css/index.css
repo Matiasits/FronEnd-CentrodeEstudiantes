@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+header { 
+grid-area: header;
+}
+
+/* Styles for images within the header carousel */
+header .carousel-inner img {
+    width: 100%; /* Full width */
+    height: 600px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio while fitting into the container */
+}
+
+/* Ajustes para el margen inferior del contenedor principal */
+main {
+    grid-area: main;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+
+.card{
+    /* width: 1200px; */
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.card .card-img-top {
+    width: 400px;
+    height: 300px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#3e3e3e; /* Dark blue background color */
+
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+.card-body a:hover{
+    background:#fff;
+    color:#3e3e3e;
+  }
+.card-body a:before,
+.card-body a:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #3e3e3e;
+    transition:400ms ease all;
+  }
+.card-body a:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+.card-body a:hover:before,
+.card-body a:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  #agenda .card{
+    flex-direction: row;
+    }
+    
+    #chorifest .card {
+        flex-direction: row;
+    }
+    
+    #equipoSocorro .card{
+      flex-direction: row-reverse;
+    }
+    
+    #quienesSomos .card {
+        flex-direction: row-reverse;
+    }

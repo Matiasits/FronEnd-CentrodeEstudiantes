@@ -1,29 +1,12 @@
 
-@media screen and (min-width: 576px) {
-  /* Adjust the left margin of navbar-nav to push it to the right */
-  .navbar-nav {
-      margin-left: auto;
-  }
-  
-  .navbar-nav .nav-item {
-      display: flex; /* Display elements in a row */
-      align-items: center; /* Vertically center within each element */
-  }    
+main {
+  margin-bottom: 300px;
+  grid-area: main;
 }
 
-nav {
-  background-color: #3e3e3e; /* Dark blue background color */
+header {
+  grid-area: header;
 }
-
-nav h1 {
-  color:#f8f8f8;
-}
-
-nav a img { 
-  height: 50px;
-  width: 50px;
-}
-
 
 .instrucciones {
     background-color: #f8f8f8;
@@ -33,6 +16,7 @@ nav a img {
     text-align: center;
     margin: 20px auto;
     max-width: 600px;
+    width: 100%;
 }
 
 .instrucciones h3 {

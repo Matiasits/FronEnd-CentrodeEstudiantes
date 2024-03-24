@@ -1,0 +1,26 @@
+
+@media screen and (min-width: 576px) {
+    /* Adjust the left margin of navbar-nav to push it to the right */
+    .navbar-nav {
+        margin-left: auto;
+    }
+    
+    .navbar-nav .nav-item {
+        display: flex; /* Display elements in a row */
+        align-items: center; /* Vertically center within each element */
+    }    
+}
+
+nav {
+    background-color: #3e3e3e; /* Dark blue background color */
+    grid-area: navbar;
+}
+
+nav h1 {
+    color:#f8f8f8;
+}
+
+nav a img { 
+    height: 50px;
+    width: 50px;
+}
