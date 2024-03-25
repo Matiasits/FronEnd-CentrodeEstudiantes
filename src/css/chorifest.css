@@ -24,7 +24,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     padding: 10px;
-    background-color: #001F3F; /* Color de fondo verde para éxito (Bootstrap) */
+    background-color: #ea1d6f; /* Color de fondo verde para éxito (Bootstrap) */
     color: #fff; /* Color de texto blanco */
     border-radius: 5px;
     display: none;

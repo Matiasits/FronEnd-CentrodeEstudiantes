@@ -31,19 +31,14 @@ main {
     grid-area: main;
 }
 
-.container {
-    display: flex; /* Activa el modelo de caja flexible */
-    justify-content: center;
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
-    padding: 0%;
-  }
   
   .screen {
     position: relative;
     background: #3e3e3e;
     border-radius: 15px;
-    margin: 100px;
-    box-shadow: 20px 10px 40px rgb(35, 34, 34);
+    width: 100%;
+    margin-bottom: 40px;
+    overflow: hidden;
   }
   
   
@@ -171,12 +166,6 @@ img {
     border-bottom-color: #ddd;
   }
   
-  
-  .dribbble {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-  }
   
   @media screen and (max-width: 520px) {
     .screen-body {

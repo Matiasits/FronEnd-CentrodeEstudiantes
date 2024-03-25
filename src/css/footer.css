@@ -38,7 +38,7 @@
     
     .footer-distributed .footer-left p {
       color: #8f9296;
-      font-size: 14px;
+      font-size: 16px;
       margin: 0;
     }
     /* Footer links */
@@ -76,7 +76,7 @@
     .footer-distributed .footer-right {
       float: right;
       margin-top: 6px;
-      max-width: 180px;
+      max-width: auto;
     }
     
     .footer-distributed .footer-right a {

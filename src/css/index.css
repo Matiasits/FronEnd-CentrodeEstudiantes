@@ -9,6 +9,7 @@
   .screen {
     height: auto; /* Cambia la altura para ajustarse al contenido */
     margin-bottom: 20px; /* Ajusta el margen inferior */
+    flex-direction: column;
   }
 
   .screen:after {
@@ -35,6 +36,7 @@
   .screen {
     height: 40vh; /* Restaura la altura predeterminada */
     margin-bottom: 40px; /* Restaura el margen inferior */
+    flex-direction: column;
   }
 
   .screen:after {
@@ -61,8 +63,8 @@ header {
 /* Styles for images within the header carousel */
 header .carousel-inner img {
     width: 100%; /* Full width */
-    height: 600px; /* Fixed height */
-    object-fit: fill;
+    height: 60vh; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio while fitting into the container */
 }
 
 /* Ajustes para el margen inferior del contenedor principal */
@@ -75,22 +77,10 @@ main {
   background: #3e3e3e;
   border-radius: 15px;
   width: 100%;
-  height: 50vh;
+  height: auto; /* Usa altura automática */
+  margin: 0 auto; /* Centra horizontalmente */
   margin-bottom: 40px;
   overflow: hidden;
-}
-
-.screen:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
-  z-index: -1;
 }
 
 .screen-header {
@@ -146,6 +136,7 @@ main {
 .screen-body-item {
   flex: 1;
   padding: 50px;
+  overflow: auto; /* Agrega esta línea para permitir el desplazamiento cuando el contenido se desborde */
 }
 
 .screen-body-item.left {
@@ -170,17 +161,6 @@ main {
   color: #ea1d6f;
   font-size: 35px;
   margin-bottom: 60px;
-}
-
-.app-title:after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 25px;
-  height: 4px;
-  background: #ea1d6f;
 }
 
 .app-form-group {
