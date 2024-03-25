@@ -11,7 +11,32 @@ main {
 section {
     margin-bottom: 150px;
 }
-    
+
+.card-historia {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+    gap: 20px; /* Espacio entre las tarjetas */
+  }
+
+  .card {
+    flex: 1; /* Hace que las tarjetas ocupen el mismo espacio */
+    max-width: 400px; /* Máximo ancho de las tarjetas */
+    height: 400px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
 .cardTestimonial{
  border: none;
  cursor: pointer;
@@ -40,7 +65,8 @@ section {
  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
  text-align: center;
  margin: 20px auto ;
- max-width: 600px;
+ width: 100%;
+ max-width: 800px;
 }
 
 .instrucciones h3 {
@@ -75,10 +101,53 @@ section {
     margin-left: auto; /* Mueve Save Icon a la derecha */
 }
 
+.insta-container {
+    width: 80%;
+    height: 1000px;
+}
+
+.instagram-media {
+    background:#FFF; 
+    border:0; 
+    border-radius:3px; 
+    box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); 
+    margin: 1px;
+    height: 100%;
+    padding:0; 
+}
+
+.instagram-media-container {
+    padding:8px;
+}
+
+.instagram-media-image {
+    background:#F8F8F8; 
+    line-height:0; 
+    margin-top:40px; 
+    padding:50% 0; 
+    text-align:center; 
+    width:100%;
+}
+
+.image {
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); 
+    display:block; 
+    height:44px; 
+    margin:0 auto -44px; 
+    position:relative; 
+    top:-22px; 
+    width:44px;
+}
+
+.instagram-text {
+    margin:8px 0 0 0; 
+    padding:0 4px;
+}
+
 .instagramCard {
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 50px 10px 20px 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
