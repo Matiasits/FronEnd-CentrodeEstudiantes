@@ -2,7 +2,7 @@
 
 /* Estilos específicos para dispositivos móviles */
 @media screen and (max-width: 520px) {
-  header .carousel-inner img {
+  .imagenes-carrusel {
     height: auto; /* Cambia la altura para ajustarse al contenido */
   }
 
@@ -29,7 +29,7 @@
 
 /* Estilos responsivos para todos los tamaños de pantalla */
 @media screen and (min-width: 521px) {
-  header .carousel-inner img {
+  .imagenes-carrusel {
     width: 100%; /* Restaura el ancho a 100% */
   }
 
@@ -61,15 +61,38 @@ header {
 }
 
 /* Styles for images within the header carousel */
-header .carousel-inner img {
+.imagenes-carrusel {
     width: 100%; /* Full width */
-    height: 60vh; /* Fixed height */
+    height: auto;
     object-fit: cover; /* Maintain aspect ratio while fitting into the container */
 }
 
 /* Ajustes para el margen inferior del contenedor principal */
 main {
     grid-area: main;
+}
+
+.instrucciones {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto 20px auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.instrucciones h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.instrucciones p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
 }
 
 .screen {
